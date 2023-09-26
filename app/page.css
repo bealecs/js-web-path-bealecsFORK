@@ -13,6 +13,7 @@
   color: white;
   transition: all ease 0.3s;
   min-height: 90vh;
+  width: 100%;
 }
 .container_dark button {
   color: white;
@@ -23,6 +24,7 @@ a:hover {
 .container_light {
   transition: all ease 0.3s;
   min-height:90vh;
+  width: 100%;
 }
 @media only screen and (max-width: 1200px) {
   .container_dark {

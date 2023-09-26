@@ -2,13 +2,14 @@
 .projectsContainer {
   width: 100%;
   padding-top: 5rem;
+  overflow: hidden;
 }
 .individualContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;
-  top: 1%;
+  top: 5%;
   left: 1%;
   height: 100%;
 }
@@ -67,10 +68,24 @@
   .individualContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-between;
+    width: 95%;
+    height: fit-content;
     position: absolute;
-    top: 0;
+    top: 10%;
+  }
+  .projH2 {
+    text-align: left;
+    margin: 1rem 2rem;
+  }
+  .cardsSection img {
+    display: block;
+    width: 130px;
+    height: 110px;
+    padding: 1rem 0;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+    margin: auto;
   }
   .projectsContainer {
     padding-top: 16rem;
@@ -79,6 +94,9 @@
 
 /* Mobile View */
 @media only screen and (max-width: 768px) {
+  .projectsContainer {
+    height: 275vh;
+  }
   .para {
     display: none;
   }
@@ -87,10 +105,12 @@
   }
   .forMobile {
     display: block;
-    margin: 2rem 0;
+    margin: 0 0 1rem 0;
     font-size: 3rem;
   }
-
+  .individualContainer {
+    height: fit-content;
+  }
   .forDesktop {
     display: none;
   }
