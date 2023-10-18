@@ -117,11 +117,14 @@
   width: 100%;
   padding: 3%;
   margin-top: 5%;
+  border-radius: 0.5rem;
+  border: 1px solid orange;
   background-color: transparent;
   transition: all ease 0.3s;
 }
 .contactForm button:hover {
   text-decoration: underline;
+  background-color: orange;
 }
 .contactTitle {
   text-align: center;

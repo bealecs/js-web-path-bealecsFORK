@@ -48,7 +48,7 @@
 }
 .downloadResume {
     text-decoration: none;
-    color: black;
+    color: white;
     text-align: center;
     display: block;
     margin: auto;
@@ -56,11 +56,14 @@
     padding: 1rem;
     border-radius: 0.4rem;
     margin: 2rem auto;
-    background-color: #f0f0f0;
+    border: 1px solid orange;
+    background-color: transparent;
     transition: background-color ease-in 0.2s, color ease-in 0.2s, box-shadow ease-in 0.2s;
 }
 .downloadResume:hover {
     text-decoration: underline;
+    color: white;
+    background-color: orange;
 }
 .education {
     width: 50%;
