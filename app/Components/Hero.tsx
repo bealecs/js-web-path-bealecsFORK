@@ -25,18 +25,10 @@ export const HeroSection = () => {
         </h2>
         <h3 className={HeroStyles.typewriterText}>
           <span className={HeroStyles.typewriter}>
-            Husband, Web Developer, Veteran, Gamer
+            Father, Husband, Web Developer, Veteran
           </span>
           <span className={HeroStyles.typewriterCursor}></span>
         </h3>
-        <a
-          className={HeroStyles.vwc}
-          href="https://vetswhocode.io"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          #VetsWhoCode
-        </a>
         <div className={HeroStyles.iconsFlex}>
           <SocialIcon
             className={HeroStyles.socialIcons}

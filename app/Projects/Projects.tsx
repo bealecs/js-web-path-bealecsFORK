@@ -25,14 +25,11 @@ export const ProjectsPage = () => {
 
   return (
     <div className={ProjectsStyles.projectsContainer}>
-      <h2 className={ProjectsStyles.projH2} id="projectsSection">
-        My <span className={ProjectsStyles.name2}>Projects</span>
-      </h2>
-      <div className={ProjectsStyles.projectDisplay}>{renderProject()}</div>
+      <div className={ProjectsStyles.projectDisplay} style={{paddingTop:"10px"}}>{renderProject()}</div>
       <section className={ProjectsStyles.individualContainer} id="projects">
       <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("ClifCatalog")}>
           <h4 className={ProjectsStyles.forDesktop}>Next Meal</h4>
-          <span className={ProjectsStyles.forMobile}>🍔</span>
+            <span className={ProjectsStyles.forMobile}>🍔</span>
           <Image
             src="/banner.webp"
             alt="Screenshot of Clif's Catalog website"

@@ -89,6 +89,27 @@ export const ResumePage = () => {
                 </li>
               </ul>
             </section>
+            <section className={ResumeStyles.eduSection} style={{paddingTop:"20px"}}>
+              <h4 className={ResumeStyles.eduTitle}>
+                Lead Web Developer - Next Meal
+              </h4>
+              <span>July, 2023 - Current</span>
+              <h4 className={ResumeStyles.keyHighlights}>Key Highlights</h4>
+              <ul className={ResumeStyles.highlightsList} style={{lineHeight:"1.2rem"}}>
+                <li>
+                  Lead the full lifecycle development of an innovative web application over an extended timeframe, prominently demonstrating exemplary leadership and project management capabilities.
+                </li>
+                <li>
+                  Leveraged emerging technologies such as the Vercel AI SDK, Supabase, and Prisma ORM to enhance the application's capabilities and user engagement.
+                </li>
+                <li>
+                  Optimized API performance by implementing Next.js for serverless infrastructure, enhancing the overall user experience.
+                </li>
+                <li>
+                  Designed and developed a user-centric web project, leveraging React to ensure a seamless and engaging user experience.
+                </li>
+              </ul>
+            </section>
           </article>
         </div>
         <div className={ResumeStyles.bottomResume}>
