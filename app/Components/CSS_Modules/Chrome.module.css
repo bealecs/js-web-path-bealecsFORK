@@ -1,0 +1,30 @@
+.container {
+  width: 80%;
+  float: right;
+  padding-right: 2rem;
+  min-height: 90vh;
+}
+.container h2 {
+  font-size: 2.5rem;
+}
+.anchors {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+.anchor {
+  color: orange;
+}
+.anchors a {
+  margin: 1rem 0;
+  color: orange;
+}
+.article p {
+  text-align: left;
+}
+@media only screen and (max-width:1400px) {
+  .container {
+    float: left;
+    margin: 1rem 2rem;
+  }
+}

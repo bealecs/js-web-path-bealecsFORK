@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import ProjectsStyles from "../Components/CSS_Modules/Projects.module.css";
 import Image from "next/image";
-import { CCLighting } from "../CCLighting/CCLighting";
+import { Chrome } from "../Chrome/Chrome";
 import { ClifsCatalog } from "../ClifsCatalog/ClifsCatalog";
-import { PWP } from "../PWP/PWP";
+import { ClifCodes } from "../ClifCodes/ClifCodes";
 
 export const ProjectsPage = () => {
 
@@ -12,12 +12,12 @@ export const ProjectsPage = () => {
   
   const renderProject = () => {
     switch (currentProjectDisplay) {
-      case "ClifCatalog":
+      case "nextMeal":
         return <ClifsCatalog />;
-      case "PWP":
-        return <PWP />;
-      case "CCLighting":
-        return <CCLighting />;
+      case "clifCodes":
+        return <ClifCodes />;
+      case "chrome":
+        return <Chrome />;
       default:
         return <ClifsCatalog />;
     }
@@ -27,32 +27,32 @@ export const ProjectsPage = () => {
     <div className={ProjectsStyles.projectsContainer}>
       <div className={ProjectsStyles.projectDisplay} style={{paddingTop:"10px"}}>{renderProject()}</div>
       <section className={ProjectsStyles.individualContainer} id="projects">
-      <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("ClifCatalog")}>
+      <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("nextMeal")}>
           <h4 className={ProjectsStyles.forDesktop}>Next Meal</h4>
             <span className={ProjectsStyles.forMobile}>🍔</span>
           <Image
             src="/banner.webp"
-            alt="Screenshot of Clif's Catalog website"
+            alt="Logo for Next Meal website"
             width={200}
             height={170}
           />
         </button>
-        <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("PWP")}>
-          <h4 className={ProjectsStyles.forDesktop}>Pips with Paul</h4>
+        <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("clifCodes")}>
+          <h4 className={ProjectsStyles.forDesktop}>Clif Codes Freelance</h4>
           <span className={ProjectsStyles.forMobile}>📈</span>
           <Image
-            src="/pwpLogo.webp"
-            alt="Screenshot of pips with paul website"
+            src="/clifcodes.png"
+            alt="Screenshot of Clif Codes logo"
             width={200}
             height={170}
           />
         </button>
-        <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("CCLighting")}>
-          <h4 className={ProjectsStyles.forDesktop}>C&C Lighting</h4>
-          <span className={ProjectsStyles.forMobile}>💡</span>
+        <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("chrome")}>
+          <h4 className={ProjectsStyles.forDesktop}>Chrome Extension</h4>
+          <span className={ProjectsStyles.forMobile}>🧩</span>
           <Image
-            src="/cclightinglogo.webp"
-            alt="Screenshot of Cross & Carlile Lighting website"
+            src="/chromeextension.jpg"
+            alt="Logo for a chrome extension"
             width={200}
             height={170}
           />
