@@ -1,6 +1,6 @@
 "use client";
 import { useContext } from "react";
-import ClifCodesStyles from "../Components/CSS_Modules/clifCodes.module.css";
+import ClifCodesStyles from "../Components/CSS_Modules/ClifCodes.module.css";
 import { ThemeContext } from "../store/CtxProvider";
 
 export const ClifCodes = () => {
@@ -56,6 +56,10 @@ export const ClifCodes = () => {
             and I am excited to see where this road leads me and my work in the
             future.
           </p>
+          <div style={{margin:"1rem 0"}} className={ClifCodesStyles.forDesktopOnly}>
+            <video src="/clifcodesvid.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
+            <aside>A video showcasing the Clif Codes Freelance website</aside>
+          </div>
         </article>
       </div>
     </section>

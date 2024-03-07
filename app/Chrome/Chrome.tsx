@@ -39,8 +39,8 @@ export const Chrome = () => {
             mouse, retrieve a real-time list of jobs from LinkedIn based on my
             predefined search parameters.
           </p>
-          <div style={{margin:"1rem 0"}}>
-            <video src="/video.mp4" autoPlay loop style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
+          <div style={{margin:"1rem 0"}} className={ChromeStyles.forDesktopOnly}>
+            <video src="/video.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
             <aside>A video showcasing the custom Chrome Extension in action</aside>
           </div>
         </article>

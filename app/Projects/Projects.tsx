@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ProjectsStyles from "../Components/CSS_Modules/Projects.module.css";
 import Image from "next/image";
 import { Chrome } from "../Chrome/Chrome";
-import { ClifsCatalog } from "../ClifsCatalog/ClifsCatalog";
+import { NextMeal } from "../NextMeal/NextMeal";
 import { ClifCodes } from "../ClifCodes/ClifCodes";
 
 export const ProjectsPage = () => {
@@ -13,13 +13,13 @@ export const ProjectsPage = () => {
   const renderProject = () => {
     switch (currentProjectDisplay) {
       case "nextMeal":
-        return <ClifsCatalog />;
+        return <NextMeal />;
       case "clifCodes":
         return <ClifCodes />;
       case "chrome":
         return <Chrome />;
       default:
-        return <ClifsCatalog />;
+        return <NextMeal />;
     }
   };
 
@@ -38,7 +38,7 @@ export const ProjectsPage = () => {
           />
         </button>
         <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("clifCodes")}>
-          <h4 className={ProjectsStyles.forDesktop}>Clif Codes Freelance</h4>
+          <h4 className={ProjectsStyles.forDesktop}>Clif Codes</h4>
           <span className={ProjectsStyles.forMobile}>📈</span>
           <Image
             src="/clifcodes.png"
@@ -47,7 +47,7 @@ export const ProjectsPage = () => {
             height={170}
           />
         </button>
-        <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("chrome")}>
+        <button className={ProjectsStyles.cardsSection} style={{marginBottom:"2rem"}} onClick={() => setCurrentProjectDisplay("chrome")}>
           <h4 className={ProjectsStyles.forDesktop}>Chrome Extension</h4>
           <span className={ProjectsStyles.forMobile}>🧩</span>
           <Image

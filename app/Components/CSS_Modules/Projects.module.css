@@ -1,24 +1,24 @@
 /* Start of Project Section */
 .projectsContainer {
   width: 100%;
-  padding-top: 5rem;
   overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5rem 0;
 }
 .individualContainer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  position: absolute;
-  top: 5%;
-  left: 1%;
-  height: 100%;
+  justify-content: flex-start;
+  width: fit-content;
+  padding-left: 1rem;
 }
 .individualContainer .cardsSection {
   background-color: transparent;
   border: none;
-  margin-top: 1rem;
   border-bottom: 5px solid transparent;
   transition: all ease 0.3s;
+  margin: 2rem 0;
 }
 .individualContainer .cardsSection.cardsSection:focus, .cardsSection:hover {
   border-bottom: 5px solid orange;
@@ -36,9 +36,9 @@
   display: block;
 }
 .cardsSection h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
-  text-align: start;
+  text-align: center;
 }
 .cardsSection img {
   display: block;
@@ -93,6 +93,11 @@
 
 /* Mobile View */
 @media only screen and (max-width: 768px) {
+  .projectDisplay p {
+    font-size: 1rem;
+    line-height: 2rem;
+    padding: 1rem 0;
+  }
   .projectsContainer {
     height: 275vh;
   }
@@ -104,7 +109,6 @@
   }
   .forMobile {
     display: block;
-    margin: 0 0 1rem 0;
     font-size: 3rem;
   }
   .individualContainer {
@@ -118,6 +122,9 @@
    }
    .cardsSection img {
     display: none;
+   }
+   .cardsSection {
+    margin: 0;
    }
 }
 @media only screen and (max-width: 480px) {
