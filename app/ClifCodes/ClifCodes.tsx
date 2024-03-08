@@ -1,6 +1,6 @@
 "use client";
 import { useContext } from "react";
-import ClifCodesStyles from "../Components/CSS_Modules/ClifCodes.module.css";
+import ClifCodesStyles from "../Components/CSS_Modules/clifCodes.module.css";
 import { ThemeContext } from "../store/CtxProvider";
 
 export const ClifCodes = () => {
