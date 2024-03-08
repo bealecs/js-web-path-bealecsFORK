@@ -90,6 +90,18 @@
   animation-timing-function: steps(50);
   color: white;
 }
+.freelanceAnchor {
+  margin: auto;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+  color: orange;
+  transition: all linear 0.3s;
+}
+.freelanceAnchor:hover {
+  border-bottom: 2px solid orange;
+}
 .socialIcons {
   transition: all ease 0.3s;
 }
@@ -127,6 +139,9 @@
   .typewriterText {
     display: none;
   }
+  .freelanceAnchor {
+    display: none;
+  }
   .pfp {
     width: 80%;
     height: 70%;
@@ -160,6 +175,7 @@
   .typewriterText {
     display: none;
   }
+  
   .pfp {
     width: 80%;
     height: 70%;

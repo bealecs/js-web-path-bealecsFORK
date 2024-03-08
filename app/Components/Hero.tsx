@@ -29,6 +29,7 @@ export const HeroSection = () => {
           </span>
           <span className={HeroStyles.typewriterCursor}></span>
         </h3>
+        <a href="https://clifcodes.dev" target="_blank" rel="noopener noreferrer" className={HeroStyles.freelanceAnchor}>View my freelance services</a>
         <div className={HeroStyles.iconsFlex}>
           <SocialIcon
             className={HeroStyles.socialIcons}
