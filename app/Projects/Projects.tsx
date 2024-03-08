@@ -31,7 +31,7 @@ export const ProjectsPage = () => {
           <h4 className={ProjectsStyles.forDesktop}>Next Meal</h4>
             <span className={ProjectsStyles.forMobile}>🍔</span>
           <Image
-            src="/banner.webp"
+            src="/Ellipse2.svg"
             alt="Logo for Next Meal website"
             width={200}
             height={170}
