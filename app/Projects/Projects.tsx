@@ -31,7 +31,7 @@ export const ProjectsPage = () => {
           <h4 className={ProjectsStyles.forDesktop}>Next Meal</h4>
             <span className={ProjectsStyles.forMobile}>🍔</span>
           <Image
-            src="/Ellipse2.svg"
+            src="/NextMeal.svg"
             alt="Logo for Next Meal website"
             width={200}
             height={170}
@@ -41,7 +41,7 @@ export const ProjectsPage = () => {
           <h4 className={ProjectsStyles.forDesktop}>Clif Codes</h4>
           <span className={ProjectsStyles.forMobile}>📈</span>
           <Image
-            src="/clifcodes.png"
+            src="/ClifCodes.svg"
             alt="Screenshot of Clif Codes logo"
             width={200}
             height={170}
@@ -51,7 +51,7 @@ export const ProjectsPage = () => {
           <h4 className={ProjectsStyles.forDesktop}>Chrome Extension</h4>
           <span className={ProjectsStyles.forMobile}>🧩</span>
           <Image
-            src="/chromeextension.jpg"
+            src="/Chrome.svg"
             alt="Logo for a chrome extension"
             width={200}
             height={170}
