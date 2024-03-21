@@ -84,7 +84,7 @@ export const AboutPage = () => {
               alt="collage of Clif, his wife Mari, and two dogs Nymeria and Max"
             />
             <aside className={AboutStyles.aside}>
-              A collage of my wife, my puppies, and our home
+              A small collage of my wife, my puppies, and our home
             </aside>
           </div>
           <div className={AboutStyles.forMobile}>
@@ -94,7 +94,7 @@ export const AboutPage = () => {
             <span className={AboutStyles.firstLetter}>C</span>ommitting time to
             family is a big priority of mine, especially with how busy I can
             become. My wife, Marisela, and I just had our first baby! Mateo,
-            (our son), and our puppies mean more than anything to me. Most of my
+            our son, and our puppies mean more than anything to me. Most of my
             time is spent either with my wife and son, working, or honing my
             skills for web development.
           </p>
