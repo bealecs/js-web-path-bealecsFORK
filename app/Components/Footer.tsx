@@ -9,15 +9,14 @@ export const Footer = () => {
   const theme = useContext(ThemeContext);
   return (
     <section className={theme.body === 'container_light' ? FooterStyles.footerSection : FooterStyles.footerSectionDark}>
-      <div className={FooterStyles.otherLinks}>
-        <h2>Useful Links</h2>
-        <Link className={FooterStyles.linkies} href="/">
-          Back to home page
-        </Link>
-        <Link className={FooterStyles.linkies} href="https://dev.to/bealecs" target="_blank" rel="noreferrer noopener">
-          My Dev.to Profile
-        </Link>
-      </div>
+      <div className={FooterStyles.logoDiv}>
+          <h1 id="logotitle">
+            <Link className={FooterStyles.logoTitle} href="/">
+              <span className={FooterStyles.logoLetters}>C</span>lif{" "}
+              <span className={FooterStyles.logoLetters}>C</span>odes
+            </Link>
+          </h1>
+        </div>
       <div className={FooterStyles.socialLinks}>
         <SocialIcon
           className={FooterStyles.socialIcons}
@@ -30,10 +29,11 @@ export const Footer = () => {
           bgColor="white"
         />
         <SocialIcon
-          className={FooterStyles.socialIcons}
-          url="https://codepen.io/clifcodes"
-          bgColor="white"
-        />
+            className={FooterStyles.socialIcons}
+            rel="noopener noreferrer"
+            url="https://dev.to/bealecs"
+            bgColor="white"
+          />
       </div>
     </section>
   );

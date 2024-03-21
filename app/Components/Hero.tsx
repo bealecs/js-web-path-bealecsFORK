@@ -4,9 +4,11 @@ import HeroStyles from "./CSS_Modules/Hero.module.css";
 import Image from "next/image";
 import { SocialIcon } from "react-social-icons";
 import { ThemeContext } from "../store/CtxProvider";
+import { ContactContext } from "../store/ContactContext";
 
 export const HeroSection = () => {
   const theme = useContext(ThemeContext);
+  const contact = useContext(ContactContext);
   return (
     <section className={theme.body === 'container_light' ? HeroStyles.landingSectionLight : HeroStyles.landingSectionDark} id="landingSection">
       <div>
@@ -25,11 +27,11 @@ export const HeroSection = () => {
         </h2>
         <h3 className={HeroStyles.typewriterText}>
           <span className={HeroStyles.typewriter}>
-            Father, Husband, Web Developer, Veteran
+            U.S. Veteran ➡ Full Stack Web Developer
           </span>
           <span className={HeroStyles.typewriterCursor}></span>
         </h3>
-        <a href="https://clifcodes.dev" target="_blank" rel="noopener noreferrer" className={HeroStyles.freelanceAnchor}>View my freelance services</a>
+        <button style={{color:"orange",backgroundColor:"transparent",border:"none",borderBottom:"2px solid transparent"}} className={HeroStyles.contactButton} onClick={contact.clickHandle}>Contact me</button>
         <div className={HeroStyles.iconsFlex}>
           <SocialIcon
             className={HeroStyles.socialIcons}
@@ -46,7 +48,7 @@ export const HeroSection = () => {
           <SocialIcon
             className={HeroStyles.socialIcons}
             rel="noopener noreferrer"
-            url="https://codepen.io/clifcodes"
+            url="https://dev.to/bealecs"
             bgColor="white"
           />
         </div>

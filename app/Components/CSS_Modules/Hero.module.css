@@ -54,7 +54,7 @@
 }
 .name {
   font-size: 2rem;
-  padding: 15%;
+  padding: 2rem;
   display: block;
   color: white;
   text-align: center;
@@ -77,8 +77,8 @@
   text-decoration: underline;
 }
 .typewriterText {
-  font-size: 1.2rem;
-  padding-bottom: 15%;
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
 }
 .typewriter {
   display: inline-block;
@@ -90,17 +90,17 @@
   animation-timing-function: steps(50);
   color: white;
 }
-.freelanceAnchor {
+.contactButton {
   margin: auto;
-  border-bottom: 2px solid transparent;
   text-decoration: none;
   width: fit-content;
   margin-bottom: 1.5rem;
-  color: orange;
+  font-size: 1.2rem;
   transition: all linear 0.3s;
 }
-.freelanceAnchor:hover {
-  border-bottom: 2px solid orange;
+.contactButton:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .socialIcons {
   transition: all ease 0.3s;
@@ -136,11 +136,17 @@
 @media screen and (max-width: 768px) {
   /*Landing Section*/
 
+  .name {
+    padding: 1rem;
+  }
+  .name2  {
+    font-size: 3rem;
+  }
   .typewriterText {
     display: none;
   }
-  .freelanceAnchor {
-    display: none;
+  .contactButton {
+    margin: 0 auto;
   }
   .pfp {
     width: 80%;

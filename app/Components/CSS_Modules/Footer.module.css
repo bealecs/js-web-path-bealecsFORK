@@ -28,6 +28,18 @@
   background-color: #1c3144;
   transition: all ease 0.3s;
 }
+.logoLetters {
+  color: orange;
+  font-size: 3rem;
+}
+.logoTitle {
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-left: 2rem;
+}
 .socialLinks {
   display: flex;
   justify-content: space-evenly;

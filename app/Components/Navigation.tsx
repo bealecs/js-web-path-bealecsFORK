@@ -44,17 +44,16 @@ export const Navigation = () => {
               About
             </Link>
           </li>
-          <li className={NavigationStyles.listItem} id="projectsID" onClick={contact.clickHandle}>
-            <Link className={NavigationStyles.navButton} href="#">
-              Contact
-            </Link>
-          </li>
           <li className={NavigationStyles.listItem} id="projectsID">
             <Link className={NavigationStyles.navButton} href="Resume">
               Resume
             </Link>
           </li>
-
+          <li className={NavigationStyles.listItem} id="projectsID">
+            <Link className={NavigationStyles.navButton} href="https://clifcodes.dev" target="_blank" rel="noopener noreffer">
+              Freelance Services
+            </Link>
+          </li>
           <li className={NavigationStyles.themer} id="themer" onClick={theme.onThemeChange}>
             {theme.body === "container_light" ? 
               "🌛"
@@ -87,9 +86,9 @@ export const Navigation = () => {
                 About
               </Link>
             </li>
-            <li className={NavigationStyles.listItem} onClick={contact.clickHandle} id="projectsID">
-              <Link className={NavigationStyles.navButton} onClick={hamburgerClick} href="#"> 
-                Contact
+            <li className={NavigationStyles.listItem} id="projectsID">
+              <Link className={NavigationStyles.navButton} onClick={hamburgerClick} href="https://clifcodes.dev" target="_blank" rel="noopener noreffer"> 
+                Freelance
               </Link>
             </li>
             <li className={NavigationStyles.listItem} onClick={hamburgerClick} id="projectsID">

@@ -22,7 +22,6 @@
   margin: auto;
   border-radius: 0.2rem;
   transition: all ease 0.3s;
-  margin-top: 1rem;
 }
 .anchor:hover {
   text-decoration: underline;
