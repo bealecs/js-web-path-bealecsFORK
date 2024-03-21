@@ -152,6 +152,9 @@
     .skills {
         flex-wrap: nowrap;
     }
+    .downloadTxt {
+        display: none;
+    }
 }
 
 /* Mobile View */

@@ -14,6 +14,15 @@ export const ResumePage = () => {
         <h2 className={ResumeStyles.downloadTxt}>
           For the full resume, click below to download
         </h2>
+        <a
+          className={ResumeStyles.downloadResume}
+          href="/Clifton Beale's Resume.docx"
+          target="_blank"
+          rel="noopener noreferrer"
+          download
+        >
+          Download Resume
+        </a>
         <div className={ResumeStyles.topResume}>
           <article className={ResumeStyles.education}>
             <h3 className={ResumeStyles.resumeH3}>Education</h3>
@@ -134,15 +143,6 @@ export const ResumePage = () => {
           </article>
           <article></article>
         </div>
-        <a
-          className={ResumeStyles.downloadResume}
-          href="/Clifton Beale's Resume.docx"
-          target="_blank"
-          rel="noopener noreferrer"
-          download
-        >
-          Download Resume
-        </a>
       </section>
     </>
   );

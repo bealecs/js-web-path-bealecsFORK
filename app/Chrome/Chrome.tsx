@@ -41,7 +41,7 @@ export const Chrome = () => {
           </p>
           <div style={{margin:"1rem 0"}} className={ChromeStyles.forDesktopOnly}>
             <video src="/video.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
-            <aside>A video showcasing the custom Chrome Extension in action</aside>
+            <aside  style={{fontSize:"small"}}>A video showcasing the custom Chrome Extension in action</aside>
           </div>
         </article>
       </div>

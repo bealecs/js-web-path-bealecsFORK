@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import ProjectsStyles from "../Components/CSS_Modules/Projects.module.css";
 import Image from "next/image";
@@ -7,9 +7,8 @@ import { NextMeal } from "../NextMeal/NextMeal";
 import { ClifCodes } from "../ClifCodes/ClifCodes";
 
 export const ProjectsPage = () => {
-
   const [currentProjectDisplay, setCurrentProjectDisplay] = useState("");
-  
+
   const renderProject = () => {
     switch (currentProjectDisplay) {
       case "nextMeal":
@@ -25,11 +24,12 @@ export const ProjectsPage = () => {
 
   return (
     <div className={ProjectsStyles.projectsContainer}>
-      <div className={ProjectsStyles.projectDisplay} style={{paddingTop:"10px"}}>{renderProject()}</div>
       <section className={ProjectsStyles.individualContainer} id="projects">
-      <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("nextMeal")}>
+        <button
+          className={ProjectsStyles.cardsSection}
+          onClick={() => setCurrentProjectDisplay("nextMeal")}
+        >
           <h4 className={ProjectsStyles.forDesktop}>Next Meal</h4>
-            <span className={ProjectsStyles.forMobile}>🍔</span>
           <Image
             src="/NextMeal.svg"
             alt="Logo for Next Meal website"
@@ -37,9 +37,11 @@ export const ProjectsPage = () => {
             height={170}
           />
         </button>
-        <button className={ProjectsStyles.cardsSection} onClick={() => setCurrentProjectDisplay("clifCodes")}>
+        <button
+          className={ProjectsStyles.cardsSection}
+          onClick={() => setCurrentProjectDisplay("clifCodes")}
+        >
           <h4 className={ProjectsStyles.forDesktop}>Clif Codes</h4>
-          <span className={ProjectsStyles.forMobile}>📈</span>
           <Image
             src="/ClifCodes.svg"
             alt="Screenshot of Clif Codes logo"
@@ -47,9 +49,12 @@ export const ProjectsPage = () => {
             height={170}
           />
         </button>
-        <button className={ProjectsStyles.cardsSection} style={{marginBottom:"2rem"}} onClick={() => setCurrentProjectDisplay("chrome")}>
+        <button
+          className={ProjectsStyles.cardsSection}
+          style={{ marginBottom: "2rem" }}
+          onClick={() => setCurrentProjectDisplay("chrome")}
+        >
           <h4 className={ProjectsStyles.forDesktop}>Chrome Extension</h4>
-          <span className={ProjectsStyles.forMobile}>🧩</span>
           <Image
             src="/Chrome.svg"
             alt="Logo for a chrome extension"
@@ -58,6 +63,12 @@ export const ProjectsPage = () => {
           />
         </button>
       </section>
+      <div
+        className={ProjectsStyles.projectDisplay}
+        style={{ paddingTop: "10px" }}
+      >
+        {renderProject()}
+      </div>
     </div>
   );
 };
