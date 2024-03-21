@@ -8,6 +8,9 @@
   font-size: small;
   margin-bottom: 2rem;
 }
+.forMobile {
+  display: none;
+}
 .aboutDiv {
   align-items: center;
   margin: auto;
@@ -95,6 +98,11 @@
   .aboutContainer {
     flex-wrap: wrap;
     width: 100%;
+  }
+  .forMobile {
+   display: block;
+   text-align: center;
+   padding: 1rem 0;
   }
   .imageDiv {
     display: none;
