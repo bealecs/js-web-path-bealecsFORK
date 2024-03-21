@@ -27,7 +27,6 @@ export const ClifCodes = () => {
           </a>
         </div>
         <article className={ClifCodesStyles.article}>
-          <h4 style={{fontSize:"1.5rem",margin:"1rem 0"}}>Journey to freelance</h4>
           <p>
             Programming, not just web development, has been a passion of mine
             since I was a child. I have been coding since my early teen years,
