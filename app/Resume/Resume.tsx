@@ -24,54 +24,7 @@ export const ResumePage = () => {
           Download Resume
         </a>
         <div className={ResumeStyles.topResume}>
-          <article className={ResumeStyles.education}>
-            <h3 className={ResumeStyles.resumeH3}>Education</h3>
-            <section className={ResumeStyles.eduSection}>
-              <h4 className={ResumeStyles.eduTitle}>CodeCademy Online</h4>
-              <p>
-                I completed and earned a certificate for front-end path work
-                from Codecademy's online courses. Within these courses, I was
-                taught the basics of HTML and CSS, as well as touching into some
-                basic functionality with Javascript.
-              </p>
-            </section>
-            <section className={ResumeStyles.eduSection}>
-              <h4 className={ResumeStyles.eduTitle}>
-                Google IT Support Professional Certificate
-              </h4>
-              <p>
-                Eight-month IT support program, developed by Google, that covers
-                troubleshooting, customer service, networking, operating
-                systems, system administration, and security, and includes
-                hands-on labs
-              </p>
-            </section>
-            <section className={ResumeStyles.eduSection}>
-              <h4 className={ResumeStyles.eduTitle}>
-                Coursera Online - META Front-End Web Developer
-              </h4>
-              <p>
-                Completed and earned certificates through Coursera over several
-                months, taking deeper dives into the fundamentals of Javascript
-                and basics of Object Oriented Programming. I also gained
-                experience during this course developing with React, a popular
-                JavaScript framework.
-              </p>
-            </section>
-            <section className={ResumeStyles.eduSection}>
-              <h4 className={ResumeStyles.eduTitle}>
-                JavaScript Web Path 2023 Bootcamp
-              </h4>
-              <p>
-                A program offered by #VetsWhoCode, I am currently in the process
-                of working through issues designed to eventually have a fully
-                functional professional portfolio display. Within this program,
-                I am utilizing HTML, CSS, and Vanilla JavaScript to really build
-                on the fundamentals of programming with JavaScript.
-              </p>
-            </section>
-          </article>
-          <article className={ResumeStyles.experience}>
+        <article className={ResumeStyles.experience}>
             <h3 className={ResumeStyles.resumeH3}>Experience</h3>
             <section className={ResumeStyles.eduSection}>
               <h4 className={ResumeStyles.eduTitle}>
@@ -118,6 +71,53 @@ export const ResumePage = () => {
                   Designed and developed a user-centric web project, leveraging React to ensure a seamless and engaging user experience.
                 </li>
               </ul>
+            </section>
+          </article>
+          <article className={ResumeStyles.education}>
+            <h3 className={ResumeStyles.resumeH3}>Education</h3>
+            <section className={ResumeStyles.eduSection}>
+              <h4 className={ResumeStyles.eduTitle}>CodeCademy Online</h4>
+              <p>
+                I completed and earned a certificate for front-end path work
+                from Codecademy's online courses. Within these courses, I was
+                taught the basics of HTML and CSS, as well as touching into some
+                basic functionality with Javascript.
+              </p>
+            </section>
+            <section className={ResumeStyles.eduSection}>
+              <h4 className={ResumeStyles.eduTitle}>
+                Google IT Support Professional Certificate
+              </h4>
+              <p>
+                Eight-month IT support program, developed by Google, that covers
+                troubleshooting, customer service, networking, operating
+                systems, system administration, and security, and includes
+                hands-on labs
+              </p>
+            </section>
+            <section className={ResumeStyles.eduSection}>
+              <h4 className={ResumeStyles.eduTitle}>
+                Coursera Online - META Front-End Web Developer
+              </h4>
+              <p>
+                Completed and earned certificates through Coursera over several
+                months, taking deeper dives into the fundamentals of Javascript
+                and basics of Object Oriented Programming. I also gained
+                experience during this course developing with React, a popular
+                JavaScript framework.
+              </p>
+            </section>
+            <section className={ResumeStyles.eduSection}>
+              <h4 className={ResumeStyles.eduTitle}>
+                JavaScript Web Path 2023 Bootcamp
+              </h4>
+              <p>
+                A program offered by #VetsWhoCode, I am currently in the process
+                of working through issues designed to eventually have a fully
+                functional professional portfolio display. Within this program,
+                I am utilizing HTML, CSS, and Vanilla JavaScript to really build
+                on the fundamentals of programming with JavaScript.
+              </p>
             </section>
           </article>
         </div>
