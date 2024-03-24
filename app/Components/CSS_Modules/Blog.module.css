@@ -28,6 +28,7 @@
 }
 .header {
   text-align: center;
+  margin-bottom: 1rem;
 }
 .name2 {
   color: orange;
@@ -62,6 +63,24 @@
 }
 .reading {
   margin: 2%;
+}
+@media only screen and (max-width: 780px) {
+  .title {
+    font-size: 1rem;
+  }
+  .reading {
+    margin: auto;
+    font-size: small;
+  }
+  .listItem {
+    padding: 1rem;
+  }
+  .name2 {
+    font-size: 1.5rem;
+  }
+  .header {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 480px) {
   .unorderedList {
