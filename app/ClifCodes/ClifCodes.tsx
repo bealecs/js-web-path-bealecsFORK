@@ -57,7 +57,7 @@ export const ClifCodes = () => {
           </p>
           <div style={{margin:"1rem 0"}} className={ClifCodesStyles.forDesktopOnly}>
             <video src="/clifcodesvid.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
-            <aside style={{fontSize:"small"}}>A video showcasing the Clif Codes Freelance website</aside>
+            <aside style={{fontSize:"small", borderLeft:"3px solid orange",paddingLeft:"0.5rem"}}>A video showcasing the Clif Codes Freelance website</aside>
           </div>
         </article>
       </div>

@@ -3,10 +3,13 @@
   margin: 2rem auto;
 }
 .aside {
-  display: block;
   text-align: center;
   font-size: small;
+  margin: auto;
+  padding-left: 0.5rem;
   margin-bottom: 2rem;
+  border-left: 3px solid orange;
+  width: fit-content;
 }
 .forMobile {
   display: none;
