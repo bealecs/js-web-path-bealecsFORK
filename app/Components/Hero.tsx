@@ -27,7 +27,7 @@ export const HeroSection = () => {
         </h2>
         <h3 className={HeroStyles.typewriterText}>
           <span className={HeroStyles.typewriter}>
-            U.S. Veteran ➡ Full Stack Web Developer
+            U.S. Veteran ➡ Software Engineer
           </span>
           <span className={HeroStyles.typewriterCursor}></span>
         </h3>
