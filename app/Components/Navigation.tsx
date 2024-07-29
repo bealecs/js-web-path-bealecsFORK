@@ -44,11 +44,11 @@ export const Navigation = () => {
               About
             </Link>
           </li>
-          <li className={NavigationStyles.listItem} id="projectsID">
+          {/* <li className={NavigationStyles.listItem} id="projectsID">
             <Link className={NavigationStyles.navButton} href="Resume">
               Resume
             </Link>
-          </li>
+          </li> */}
           <li className={NavigationStyles.listItem} id="projectsID">
             <Link className={NavigationStyles.navButton} href="https://clifcodes.dev" target="_blank" rel="noopener noreffer">
               Freelance Services
@@ -86,11 +86,11 @@ export const Navigation = () => {
                 About
               </Link>
             </li>
-            <li className={NavigationStyles.listItem} onClick={hamburgerClick} id="projectsID">
+            {/* <li className={NavigationStyles.listItem} onClick={hamburgerClick} id="projectsID">
               <Link className={NavigationStyles.navButton} href="Resume">
                 Resume
               </Link>
-            </li>
+            </li> */}
             <li className={NavigationStyles.listItem} id="projectsID">
               <Link className={NavigationStyles.navButton} onClick={hamburgerClick} href="https://clifcodes.dev" target="_blank" rel="noopener noreffer"> 
                 Freelance
