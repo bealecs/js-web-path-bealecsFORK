@@ -12,6 +12,10 @@
   flex-direction: column;
   margin: 0.5rem 0;
 }
+.technologiesUsed {
+  font-weight:bold;
+  font-style:oblique;
+}
 .anchor {
   color: orange;
 }

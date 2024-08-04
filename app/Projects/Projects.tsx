@@ -5,9 +5,10 @@ import Image from "next/image";
 import { Chrome } from "../Chrome/Chrome";
 import { NextMeal } from "../NextMeal/NextMeal";
 import { ClifCodes } from "../ClifCodes/ClifCodes";
+import { CartDart } from "../CartDart/CartDart";
 
 export const ProjectsPage = () => {
-  const [currentProjectDisplay, setCurrentProjectDisplay] = useState("");
+  const [currentProjectDisplay, setCurrentProjectDisplay] = useState("cartDart");
 
   const renderProject = () => {
     switch (currentProjectDisplay) {
@@ -17,6 +18,8 @@ export const ProjectsPage = () => {
         return <ClifCodes />;
       case "chrome":
         return <Chrome />;
+      case "cartDart":
+        return <CartDart />;
       default:
         return <NextMeal />;
     }
@@ -25,6 +28,19 @@ export const ProjectsPage = () => {
   return (
     <div className={ProjectsStyles.projectsContainer}>
       <section className={ProjectsStyles.individualContainer} id="projects">
+        <button
+          className={ProjectsStyles.cardsSection}
+          onClick={() => setCurrentProjectDisplay("cartDart")}
+        >
+          <h4 className={ProjectsStyles.forDesktop}>Cart Dart</h4>
+          <Image
+            src="/Logo.svg"
+            alt="Logo for a chrome extension"
+            width={200}
+            height={170}
+            className={ProjectsStyles.cartDart}
+          />
+        </button>
         <button
           className={ProjectsStyles.cardsSection}
           onClick={() => setCurrentProjectDisplay("nextMeal")}

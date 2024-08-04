@@ -10,6 +10,7 @@ export const NextMeal = () => {
     <section className={theme.body}>
       <div className={NextMealStyles.container}>
         <h2>Next Meal</h2>
+        <span className={NextMealStyles.technologiesUsed}>JavaScript, TypeScript, React, PostgresQL, AWS Lambda</span>
         <div className={NextMealStyles.anchors}>
           <a
             href="https://www.github.com/bealecs/nextmeal"
@@ -26,6 +27,10 @@ export const NextMeal = () => {
             Check out the site directly
           </a>
         </div>
+        <div style={{margin:"1rem 0"}} className={NextMealStyles.forDesktopOnly}>
+            <video src="/nextmeal.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
+            <aside style={{fontSize:"small", borderLeft:"3px solid orange",paddingLeft:"0.5rem"}}>A video showcasing the Next Meal web application</aside>
+          </div>
         <article className={NextMealStyles.article}>
           <p>
             This web app has been my most long-standing project I would say. It
@@ -51,10 +56,7 @@ export const NextMeal = () => {
             and learning about user sessions and access tokens was one of the main blockers I ran into, but I learned a lot in the process;
             overall it was definitely an enriching experience.
           </p>
-          <div style={{margin:"1rem 0"}} className={NextMealStyles.forDesktopOnly}>
-            <video src="/nextmeal.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
-            <aside style={{fontSize:"small", borderLeft:"3px solid orange",paddingLeft:"0.5rem"}}>A video showcasing the Next Meal web application</aside>
-          </div>
+          
         </article>
       </div>
     </section>

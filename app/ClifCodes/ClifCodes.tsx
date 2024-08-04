@@ -10,6 +10,7 @@ export const ClifCodes = () => {
     <section className={theme.body}>
       <div className={ClifCodesStyles.container}>
         <h2> Clif Codes Freelance Website </h2>
+        <span className={ClifCodesStyles.technologiesUsed}>JavaScript, TypeScript, React, AWS Lambda, Tailwind CSS</span>
         <div className={ClifCodesStyles.anchors}>
           <a
             href="https://www.github.com/bealecs/clifcodes"
@@ -26,6 +27,10 @@ export const ClifCodes = () => {
             Check out the site directly
           </a>
         </div>
+        <div style={{margin:"1rem 0"}} className={ClifCodesStyles.forDesktopOnly}>
+            <video src="/clifcodesvid.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
+            <aside style={{fontSize:"small", borderLeft:"3px solid orange",paddingLeft:"0.5rem"}}>A video showcasing the Clif Codes Freelance website</aside>
+          </div>
         <article className={ClifCodesStyles.article}>
           <p>
             Programming, not just web development, has been a passion of mine
@@ -55,10 +60,7 @@ export const ClifCodes = () => {
             and I am excited to see where this road leads me and my work in the
             future.
           </p>
-          <div style={{margin:"1rem 0"}} className={ClifCodesStyles.forDesktopOnly}>
-            <video src="/clifcodesvid.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
-            <aside style={{fontSize:"small", borderLeft:"3px solid orange",paddingLeft:"0.5rem"}}>A video showcasing the Clif Codes Freelance website</aside>
-          </div>
+          
         </article>
       </div>
     </section>

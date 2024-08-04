@@ -10,6 +10,9 @@ export const Chrome = () => {
     <section className={theme.body}>
       <div className={ChromeStyles.container}>
         <h2>Custom Google Chrome Extension</h2>
+        <span className={ChromeStyles.technologiesUsed}>
+          JavaScript, TypeScript, React, AWS Lambda
+        </span>
         <div className={ChromeStyles.anchors}>
           <a
             href="https://dev.to/bealecs/chrome-extensions-1kmh"
@@ -18,6 +21,31 @@ export const Chrome = () => {
           >
             Check out my blog post
           </a>
+        </div>
+        <div
+          style={{ margin: "1rem 0" }}
+          className={ChromeStyles.forDesktopOnly}
+        >
+          <video
+            src="/video.mp4"
+            autoPlay
+            loop
+            controls
+            style={{
+              width: "1000px",
+              margin: "1rem 0",
+              borderRadius: "0.5rem",
+            }}
+          />
+          <aside
+            style={{
+              fontSize: "small",
+              borderLeft: "3px solid orange",
+              paddingLeft: "0.5rem",
+            }}
+          >
+            A video showcasing the custom Chrome Extension in action
+          </aside>
         </div>
         <article className={ChromeStyles.article}>
           <p>
@@ -39,10 +67,6 @@ export const Chrome = () => {
             mouse, retrieve a real-time list of jobs from LinkedIn based on my
             predefined search parameters.
           </p>
-          <div style={{margin:"1rem 0"}} className={ChromeStyles.forDesktopOnly}>
-            <video src="/video.mp4" autoPlay loop controls style={{width:"1000px",margin:"1rem 0",borderRadius:"0.5rem"}}/>
-            <aside  style={{fontSize:"small", borderLeft:"3px solid orange",paddingLeft:"0.5rem"}}>A video showcasing the custom Chrome Extension in action</aside>
-          </div>
         </article>
       </div>
     </section>
