@@ -84,16 +84,16 @@
   
   .individualContainer {
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    width: fit-content;
+    padding: 0;
   }
-
   .cardsSection {
     order: -1; /* Place cards section above project display */
   }
 
   .cardsSection img {
-    width: 125px;
+    width: 100px;
+    padding: 0;
   }
 
   .forDesktop {
